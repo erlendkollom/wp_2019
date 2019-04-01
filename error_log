@@ -1,0 +1,14 @@
+[01-Apr-2019 11:28:22 UTC] PHP Warning:  include(/home/kollomerlendiktk/public_html/wordpress/wp-content/plugins/wordpress-seo/vendor/composer/../../admin/class-yoast-notification-center.php): failed to open stream: No such file or directory in /home/kollomerlendiktk/public_html/wordpress/wp-content/plugins/wordpress-seo/vendor/composer/ClassLoader.php on line 444
+[01-Apr-2019 11:28:22 UTC] PHP Warning:  include(): Failed opening '/home/kollomerlendiktk/public_html/wordpress/wp-content/plugins/wordpress-seo/vendor/composer/../../admin/class-yoast-notification-center.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/kollomerlendiktk/public_html/wordpress/wp-content/plugins/wordpress-seo/vendor/composer/ClassLoader.php on line 444
+[01-Apr-2019 11:28:22 UTC] PHP Fatal error:  Uncaught Error: Class 'Yoast_Notification_Center' not found in /home/kollomerlendiktk/public_html/wordpress/wp-content/plugins/wordpress-seo/wp-seo-main.php:544
+Stack trace:
+#0 /home/kollomerlendiktk/public_html/wordpress/wp-includes/class-wp-hook.php(286): load_yoast_notifications('')
+#1 /home/kollomerlendiktk/public_html/wordpress/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /home/kollomerlendiktk/public_html/wordpress/wp-includes/plugin.php(465): WP_Hook->do_action(Array)
+#3 /home/kollomerlendiktk/public_html/wordpress/wp-settings.php(374): do_action('plugins_loaded')
+#4 /home/kollomerlendiktk/public_html/wordpress/wp-config.php(90): require_once('/home/kollomerl...')
+#5 /home/kollomerlendiktk/public_html/wordpress/wp-load.php(37): require_once('/home/kollomerl...')
+#6 /home/kollomerlendiktk/public_html/wordpress/wp-blog-header.php(13): require_once('/home/kollomerl...')
+#7 /home/kollomerlendiktk/public_html/wordpress/index.php(17): require('/home/kollomerl...')
+#8 {main}
+  th in /home/kollomerlendiktk/public_html/wordpress/wp-content/plugins/wordpress-seo/wp-seo-main.php on line 544
